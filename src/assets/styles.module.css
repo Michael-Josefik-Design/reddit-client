@@ -1,0 +1,143 @@
+:root {
+
+  --primary-blue: #0075FF;
+
+  --surface-light-base: hsla(0, 0%, 100%, 1);
+  --surface-light-level-1: hsla(212, 28%, 97%, 1);
+
+
+  --text-dark-muted: #617A97;
+  
+
+  --border-light-muted: hsla(212, 26%, 83%, 1);
+
+  --shadow-blue: hsla(212, 100%, 50%, .2);
+}
+
+.blue {
+  color: var(--primary-blue);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+#root {
+  background-color: #000;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.appHeader {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  background-color: var(--primary-blue);
+  box-shadow: 0 4px 12px var(--shadow-blue);
+}
+
+.appLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4px 16px;
+
+  border-radius: 16px;
+  background-color: var(--surface-light-base);
+  color: var(--primary-blue);
+}
+
+
+
+/*  TYPOGRAPHY  */
+/*  ////////////////////  */
+
+.titleSmall {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.24px;
+}
+
+.labelXSmall {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 160% */
+  letter-spacing: 0.25px;
+}
+
+
+
+/*  Search  */
+/*  ////////////////////  */
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  max-width: 800px;
+
+  padding: 32px;
+}
+
+.searchFieldArea {
+  display: flex;
+  min-width: 260px;
+  max-width: 480px;
+
+  position: relative;
+}
+
+.searchInput {
+  display: flex;
+  height: 32px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+
+  border-radius: 16px;
+  border: 1px solid var(--border-light-muted, #C9D3DF);
+  background: var(--surface-light-base, #FFF);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.tagTray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  gap: 8px;
+
+  padding: 4px 8px;
+  border-radius: 16px;
+  background: #D9EAFF;
+}
